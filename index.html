@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-20">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Website 3</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        bgcolor: '#FFFBF0',
+                        primary: '#363958',
+                        price: '#FABE4C',
+                    },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header Starts Here -->
+    <header class="header bg-bgcolor h-20 flex bg-no-repeat bg-top fixed top-0 left-0 right-0"
+        style="background-image: url(./images/dot-box.png);">
+        <div class="max-w-screen-xl w-full mx-auto flex items-center ">
+            <div class="logo_container w-3/12">
+                <img src="./images/logo.png" alt="" class="logo w-3/4 sm-w-full">
+            </div>
+            <div class="nav_container ml-auto ">
+                <ul class="flex gap-x-12 text-xl">
+                    <li><a href="#home" class="nav_item text-redt">Home</a></li>
+                    <li><a href="#woman" class="nav_item">Woman</a></li>
+                    <li><a href="#man" class="nav_item">Man</a></li>
+                    <li><a href="#services" class="nav_item">Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="">
+        <!-- First Section Starts Here -->
+        <section class="py-20 mt-20 mx-auto max-w-screen-xl" id="home">
+            <div class="flex flex-col-reverse md:flex-row mx-auto px-3">
+                <div class="flex flex-col justify-center items-start sm:pt-5 md:pt-0 gap-y-10 w-full lg:w-3/5">
+                    <h2 class="uppercase leading-normal font-bebas text-5xl lg:text-7xl text-price">Be
+                        the Penguins
+                        <span class="text-primary"><br>of Winter</span>
+                    </h2>
+                    <p class="text-2xl leading-10">Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry.</p>
+                    <button href="#"
+                        class=" flex gap-x-4 px-10 py-4 text-white rounded-md bg-gradient-to-b from-[#A4BC46] to-[#85A019] hover:from-[#85A019] hover:to-[#A4BC46] transition-all duration-1000 ease">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path
+                                d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                        </svg>
+                        BUY NOW
+
+                    </button>
+                </div>
+                <div class="right_col w-full lg:w-2/5">
+                    <img src="./images/model.png" alt="" class="w-full">
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 2nd Section Starts Here -->
+        <section class="sec_2 py-20 mx-auto max-w-screen-xl px-5" id="woman">
+            <div class="inner w-full">
+                <h2 class="title text-primary text-5xl font-bebas">WOMAN JACKET</h2>
+                <div class="card_container mt-10 grid grid-cols-1 lg:grid-cols-3  gap-8">
+                    <div class="card rounded-3xl p-5 shadow-lg hover:shadow-none transition-all duration-700 ease border border-transparent hover:border-[#e5e7eb]">
+                        <div class="img_container bg-[#F1F1F1] py-6 px-12  rounded-2xl">
+                            <img src="./images/jacket-1.png" alt="" class="jacket">
+                        </div>
+                        <h3 class="card_heading text-3xl font-bold text-primary my-4">Yellow Coat Jacket</h3>
+                        <p class="card_para text-primary text-lg">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="price_box flex justify-between items-center mt-6">
+                            <h2 class="price text-price text-4xl font-bold">$234</h2>
+                            <button href="#"
+                                class=" flex gap-x-4 px-10 py-5 text-white rounded-lg bg-gradient-to-b from-[#A4BC46] to-[#85A019] hover:from-[#85A019] hover:to-[#A4BC46] duration-1000 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path
+                                        d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                </svg>
+                                BUY NOW
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card rounded-3xl p-5 shadow-lg hover:shadow-none transition-all duration-700 ease border border-transparent hover:border-[#e5e7eb]">
+                        <div class="img_container bg-[#F1F1F1] py-6 px-12  rounded-2xl">
+                            <img src="./images/jacket-2.png" alt="" class="jacket">
+                        </div>
+                        <h3 class="card_heading text-3xl font-bold text-primary my-4">Ladies Jacket </h3>
+                        <p class="card_para text-primary text-lg">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="price_box flex justify-between items-center mt-6">
+                            <h2 class="price text-price text-4xl font-bold">$234</h2>
+                            <button href="#"
+                                class=" flex gap-x-4 px-10 py-5 text-white rounded-lg bg-gradient-to-b from-[#A4BC46] to-[#85A019] hover:from-[#85A019] hover:to-[#A4BC46] duration-1000 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path
+                                        d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                </svg>
+                                BUY NOW
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card rounded-3xl p-5 shadow-lg hover:shadow-none transition-all duration-700 ease border border-transparent hover:border-[#e5e7eb]">
+                        <div class="img_container bg-[#F1F1F1] py-6 px-12  rounded-2xl">
+                            <img src="./images/jacket-3.png" alt="" class="jacket">
+                        </div>
+                        <h3 class="card_heading text-3xl font-bold text-primary my-4">Woman Leather Jacket </h3>
+                        <p class="card_para text-primary text-lg">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="price_box flex justify-between items-center mt-6">
+                            <h2 class="price text-price text-4xl font-bold">$234</h2>
+                            <button href="#"
+                                class=" flex gap-x-4 px-10 py-5 text-white rounded-lg bg-gradient-to-b from-[#A4BC46] to-[#85A019] hover:from-[#85A019] hover:to-[#A4BC46] duration-1000 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path
+                                        d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                </svg>
+                                BUY NOW
+
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3rd Section Starts Here -->
+        <section class="sec_3 py-20 mx-auto max-w-screen-xl px-5" id="man">
+            <div class="inner w-full">
+                <h2 class="title text-primary text-5xl font-bebas">MAN JACKET</h2>
+                <div class="card_container mt-10 grid grid-cols-1 lg:grid-cols-3  gap-8">
+                    <div class="card rounded-3xl p-5 shadow-lg hover:shadow-none transition-all duration-700 ease border border-transparent hover:border-[#e5e7eb]">
+                        <div class="img_container bg-[#F1F1F1] py-6 px-12  rounded-2xl">
+                            <img src="./images/jacket-4.png" alt="" class="jacket">
+                        </div>
+                        <h3 class="card_heading text-3xl font-bold text-primary my-4">Snowboard Jacket Mens</h3>
+                        <p class="card_para text-primary text-lg">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="price_box flex justify-between items-center mt-6">
+                            <h2 class="price text-price text-4xl font-bold">$234</h2>
+                            <button href="#"
+                                class=" flex gap-x-4 px-10 py-5 text-white rounded-lg bg-gradient-to-b from-[#A4BC46] to-[#85A019] hover:from-[#85A019] hover:to-[#A4BC46] duration-1000 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path
+                                        d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                </svg>
+                                BUY NOW
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card rounded-3xl p-5 shadow-lg hover:shadow-none transition-all duration-700 ease border border-transparent hover:border-[#e5e7eb]">
+                        <div class="img_container bg-[#F1F1F1] py-6 px-12  rounded-2xl">
+                            <img src="./images/jacket-5.png" alt="" class="jacket">
+                        </div>
+                        <h3 class="card_heading text-3xl font-bold text-primary my-4">Man Leather Jackets</h3>
+                        <p class="card_para text-primary text-lg">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="price_box flex justify-between items-center mt-6">
+                            <h2 class="price text-price text-4xl font-bold">$234</h2>
+                            <button href="#"
+                                class=" flex gap-x-4 px-10 py-5 text-white rounded-lg bg-gradient-to-b from-[#A4BC46] to-[#85A019] hover:from-[#85A019] hover:to-[#A4BC46] duration-1000 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path
+                                        d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                </svg>
+                                BUY NOW
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card rounded-3xl p-5 shadow-lg hover:shadow-none transition-all duration-700 ease border border-transparent hover:border-[#e5e7eb]">
+                        <div class="img_container bg-[#F1F1F1] py-6 px-12  rounded-2xl">
+                            <img src="./images/jacket-6.png" alt="" class="jacket">
+                        </div>
+                        <h3 class="card_heading text-3xl font-bold text-primary my-4">Man Casual Jackets </h3>
+                        <p class="card_para text-primary text-lg">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.</p>
+                        <div class="price_box flex justify-between items-center mt-6">
+                            <h2 class="price text-price text-4xl font-bold">$234</h2>
+                            <button href="#"
+                                class=" flex gap-x-4 px-10 py-5 text-white rounded-lg bg-gradient-to-b from-[#A4BC46] to-[#85A019] hover:from-[#85A019] hover:to-[#A4BC46] duration-1000 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path
+                                        d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                                </svg>
+                                BUY NOW
+
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4th Section Starts Here -->
+
+        <section class="sec_4 py-20 mx-auto max-w-screen-xl px-5" id="services">
+            <div class="inner flex flex-col-reverse lg:flex-row justify-center items-center">
+                <div class="left_col lg:w-1/2 lg:pr-12 pt-20 lg:p-0">
+                    <div class="box_container flex flex-col gap-y-10">
+                        <div
+                            class="box flex flex-col lg:flex-row gap-x-5 items-center shadow-md hover:shadow-none transition-all duration-700 ease rounded-3xl py-14 px-10 lg:p-7 border border-transparent hover:border-[#e5e7eb]">
+                            <img src="./icons/image 12.png" alt="" class="icon w-1/6 lg:w-20 lg:h-20">
+                            <div
+                                class="box_text_container lg:m-0 mt-6 flex flex-col justify-center lg:items-start items-center">
+                                <h3 class="box_heading text-primary text-3xl font-bold mb-3">Find the Perfect Fit</h3>
+                                <p class="box_para lg:text-left text-center">Everybody is different, which is why we
+                                    offer styles for every body.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="box flex flex-col lg:flex-row gap-x-5 items-center shadow-md hover:shadow-none transition-all duration-700 ease rounded-3xl py-14 px-10 lg:p-7 border border-transparent hover:border-[#e5e7eb]">
+                            <img src="./icons/image 13.png" alt="" class="icon w-1/6 lg:w-20 lg:h-20">
+                            <div
+                                class="box_text_container lg:m-0 mt-6 flex flex-col justify-center lg:items-start items-center">
+                                <h3 class="box_heading text-primary text-3xl font-bold mb-3">Free Exchanges</h3>
+                                <p class="box_para lg:text-left text-center">One of the many reasons you can shop
+                                    with peace of mind.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="box flex flex-col lg:flex-row gap-x-5 items-center rounded-3xl py-14 px-10 lg:p-7 shadow-md hover:shadow-none transition-all duration-700 ease border border-transparent hover:border-[#e5e7eb]">
+                            <img src="./icons/image 14.png" alt="" class="icon w-1/6 lg:w-20 lg:h-20">
+                            <div
+                                class="box_text_container lg:m-0 mt-6 flex flex-col justify-center lg:items-start items-center">
+                                <h3 class="box_heading text-primary text-3xl font-bold mb-3">Contact Our Seller</h3>
+                                <p class="box_para lg:text-left text-center">They are here to help you. That's quite
+                                    literally what we pay them for.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="right_col lg:w-1/2">
+                    <img src="./images/shopping.png" alt="" class="shopping">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
